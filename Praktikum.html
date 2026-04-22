@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML - Teknik Informatika UMMI</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div class="header">
+    <h1>Halo, Teknik Informatika UMMI</h1>
+    <p class="subjudul">Selamat datang di perkuliahan</p>
+
+    <div class="info">
+        <p><strong>Mata Kuliah:</strong> Pemrograman Web</p>
+        <p><strong>Materi:</strong> Belajar HTML Dasar</p>
+        <p><strong>Pertemuan:</strong> Latihan Pertama</p>
+    </div>
+
+    <p class="deskripsi">
+        Selamat datang di perkuliahan web programming.
+    </p>
+</div>
+
+<!-- Tabel -->
+<table border="1">
+    <tr>
+        <th>No</th>
+        <th>Mata Kuliah</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Pemrograman Web</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Sistem Operasi</td>
+    </tr>
+</table>
+
+<br>
+
+<!-- FORM -->
+<form onsubmit="kirimData(event)">
+    <label>Nama:</label><br>
+    <input type="text" id="namaForm"><br><br>
+
+    <label>Email:</label><br>
+    <input type="email" id="emailForm"><br><br>
+
+    <button type="submit">Kirim</button>
+</form>
+
+<!-- HASIL -->
+<div id="outputForm"></div>
+
+<script src="script.js?v=2"></script>
+</body>
+</html>

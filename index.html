@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Utama</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+
+<div class="hero">
+    <h1>Selamat Datang </h1>
+    <p>Website Teknik Informatika UMMI</p>
+    <a href="matkul.html" class="card">Mata Kuliah</a>
+</div>
+
+<script src="script.js"></script>
+<script>
+    // cek apakah sudah login
+    if (localStorage.getItem("login") !== "true") {
+        window.location.href = "login.html";
+    }
+</script>
+<button onclick="logout()">Logout</button>
+</body>
+</html>
